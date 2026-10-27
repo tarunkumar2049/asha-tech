@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import it_consulting from "/public/it_consulting.webp";
-import softwareDev from "/public/software_dev.webp";
-import webDev from "/public/web_dev.webp";
-import mobileDev from "/public/mobile_dev.webp";
-import digitalMark from "/public/digital_marketing.webp";
-import ecommerce from "/public/asha_hero.webp";
+import it_consulting from "/public/it_consulting.jpg";
+import softwareDev from "/public/software_dev.jpg";
+import webDev from "/public/web_dev.jpg";
+import mobileDev from "/public/mobile_dev.jpg";
+import digitalMark from "/public/digital_marketing.jpg";
+import ecommerce from "/public/asha_hero.jpg";
 import { useState } from "react";
 
 export default function Hero() {
@@ -14,14 +14,14 @@ export default function Hero() {
   return (
     <div>
       <div className="relative">
-        <div className="overflow-hidden h-screen mt-22">
+        <div className="overflow-hidden h-screen mt-20">
           <Image
             className="w-screen scale-160 -translate-x-5"
             src={bg}
             alt="Mobile application development representation"
           />
         </div>
-        <div className="absolute top-24 left-25 gap-4 flex flex-col">
+        <div className="absolute top-24 left-20 gap-4 flex flex-col">
           <h1 className="text-white font-semibold bg-[#b91c1c] px-4 rounded-2xl w-38">
             IT CONSULTING
           </h1>
@@ -46,7 +46,7 @@ export default function Hero() {
               <Image
                 src={it_consulting}
                 alt="it consultant"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
               <span className="w-screen z-50 bg-amber-500">asdfghj</span>
             </div>
@@ -57,7 +57,7 @@ export default function Hero() {
               <Image
                 src={softwareDev}
                 alt="software development"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
             </div>
             <div
@@ -67,7 +67,7 @@ export default function Hero() {
               <Image
                 src={webDev}
                 alt="web development"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
             </div>
             <div
@@ -77,7 +77,7 @@ export default function Hero() {
               <Image
                 src={mobileDev}
                 alt="mobile development"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
             </div>
             <div
@@ -87,7 +87,7 @@ export default function Hero() {
               <Image
                 src={digitalMark}
                 alt="digital marketing"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
             </div>
             <div
@@ -97,7 +97,7 @@ export default function Hero() {
               <Image
                 src={ecommerce}
                 alt="e commerce"
-                className="scale-215 hover:scale-240 -translate-x-5"
+                className="scale-215 hover:scale-240 -translate-x-5 duration-500"
               />
             </div>
           </div>
