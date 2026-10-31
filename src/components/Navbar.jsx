@@ -3,6 +3,7 @@ import Link from "next/link";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Navbar() {
   return (
@@ -31,13 +32,13 @@ export default function Navbar() {
           <img src="/logo.webp" alt="logo image" className="h-13 " />
           <Link href="/" className="flex flex-col">
             <h1 className="text-2xl font-semibold">AshaTech</h1>
-            <span className="text-xs text-gray-500">
+            <span className="text-xs font-bold text-gray-500">
               SOLUTIONS FOR YOUR BUSINESS
             </span>
           </Link>
         </div>
         <div className="flex pr-20 gap-5 text-gray-600 items-center">
-          <Link href="/home" className="hover:text-[#b91c1c] font-semibold">
+          <Link href={`/`} className="hover:text-[#b91c1c] font-semibold">
             Home
           </Link>
           <Link href="/about" className="hover:text-[#b91c1c] font-semibold">
@@ -46,29 +47,61 @@ export default function Navbar() {
 
           <div className="group">
             <Link
-              href="/services"
-              className="hover:flex group font-semibold hover:text-red-800 "
+              href={``}
+              className="flex items-center hover:flex group font-semibold hover:text-red-800 "
             >
               Services
+              <IoIosArrowDown />
             </Link>
-            <div className="absolute flex-col gap-2 bg-white shadow-2xl p-4 rounded-md hidden group-hover:flex">
-              <Link className="" href="/services/web-development">
+            <div className="absolute flex-col gap-1 bg-white shadow-2xl rounded-md p-4 space-y-1 hidden group-hover:flex">
+              <Link
+                className="hover:text-red-900"
+                href={`services/web-development`}
+              >
                 Web Development
               </Link>
               <Link
                 className="hover:text-red-900"
-                href="/services/app-development"
+                href={`/services/app-development`}
               >
                 App Development
               </Link>
-              <Link className="hover:text-red-900" href="/Softdev">
+              <Link
+                className="hover:text-red-900"
+                href={`/services/software-development`}
+              >
                 Software Development
               </Link>
-              <Link href="/Digital">Digital Marketing</Link>
-              <Link href="/Seo">SEO Services</Link>
-              <Link href="/It">IT Consulting</Link>
-              <Link href="/AiMl">AI & ML Solutions</Link>
-              <Link href="/Datacl">Data Cleaning</Link>
+              <Link
+                className="hover:text-red-900 "
+                href={`/services/digital-marketing`}
+              >
+                Digital Marketing
+              </Link>
+              <Link
+                className="hover:text-red-900 "
+                href="/Seo"
+              >
+                SEO Services
+              </Link>
+              <Link
+                className="hover:text-red-900 "
+                href="/It"
+              >
+                IT Consulting
+              </Link>
+              <Link
+                className="hover:text-red-900 "
+                href="/AiMl"
+              >
+                AI & ML Solutions
+              </Link>
+              <Link
+                className="hover:text-red-900 "
+                href="/Datacl"
+              >
+                Data Cleaning
+              </Link>
             </div>
           </div>
 
