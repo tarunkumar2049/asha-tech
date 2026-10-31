@@ -14,7 +14,6 @@ export default function Navbar() {
             info@ashatech.co.in
           </h1>
           <h1 className="flex items-center text-sm">
-            {" "}
             <FaPhoneAlt />
             +91 8510026464
           </h1>
@@ -46,13 +45,25 @@ export default function Navbar() {
           </Link>
 
           <div className="group">
-            <Link href="/services" className="hover:flex group font-semibold">
+            <Link
+              href="/services"
+              className="hover:flex group font-semibold hover:text-red-800 "
+            >
               Services
             </Link>
             <div className="absolute flex-col gap-2 bg-white shadow-2xl p-4 rounded-md hidden group-hover:flex">
-              <Link href="/services/web-development">Web Development</Link>
-              <Link href="/services/app-development">App Development</Link>
-              <Link href="/Softdev">Software Development</Link>
+              <Link className="" href="/services/web-development">
+                Web Development
+              </Link>
+              <Link
+                className="hover:text-red-900"
+                href="/services/app-development"
+              >
+                App Development
+              </Link>
+              <Link className="hover:text-red-900" href="/Softdev">
+                Software Development
+              </Link>
               <Link href="/Digital">Digital Marketing</Link>
               <Link href="/Seo">SEO Services</Link>
               <Link href="/It">IT Consulting</Link>
@@ -67,7 +78,7 @@ export default function Navbar() {
           >
             Portfolio
           </Link>
-          <Link href="/review" className="hover:text-[#b91c1c] font-semibold">
+          <Link href={`/review`} className="hover:text-[#b91c1c] font-semibold">
             Reviews
           </Link>
           <Link href="/blog" className="hover:text-[#b91c1c] font-semibold">
