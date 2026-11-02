@@ -4,27 +4,45 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 export default function Navbar() {
   return (
     <div className="border-b-3 border-[#b91c1c] z-20 fixed w-full bg-white">
       <div className="bg-black text-white flex justify-between">
-        <div className="flex gap-10 ml-20 py-1">
-          <h1 className="flex items-center text-sm">
+        <div className="flex gap-10 ml-20 py-2">
+          <h1 className="flex items-center text-xs">
             <IoMdMail />
             info@ashatech.co.in
           </h1>
-          <h1 className="flex items-center text-sm">
+          <h1 className="flex items-center text-xs">
             <FaPhoneAlt />
             +91 8510026464
           </h1>
-          <h1 className="flex items-center text-sm">
+          <h1 className="flex items-center text-xs">
             <FaLocationDot />
             Delhi, India
           </h1>
         </div>
-        <div className="flex mr-20">
-          <h1>Mon-Sat(10AM - 7PM)</h1>
+        <div className="flex mr-20 gap-3 justify-center items-center">
+          <h1 className="text-xs">Mon - Sat (10 AM - 7 PM)</h1>
+          <div className="flex gap-2">
+            <span className="bg-white text-xs flex items-center justify-center w-5 h-5 text-black rounded-[50%]">
+              <FaFacebookF />
+            </span>
+            <span className="bg-white text-xs flex items-center justify-center w-5 h-5 text-black rounded-[50%]">
+              <FaLinkedinIn />
+            </span>
+            <span className="bg-white text-xs flex items-center justify-center w-5 h-5 text-black rounded-[50%]">
+              <FaInstagram />
+            </span>
+            <span className="bg-white text-xs flex items-center justify-center w-5 h-5 text-black rounded-[50%]">
+              <FaYoutube />
+            </span>
+          </div>
         </div>
       </div>
       <div className="flex justify-between ">
@@ -78,28 +96,16 @@ export default function Navbar() {
               >
                 Digital Marketing
               </Link>
-              <Link
-                className="hover:text-red-900 "
-                href="/Seo"
-              >
+              <Link className="hover:text-red-900 " href="/Seo">
                 SEO Services
               </Link>
-              <Link
-                className="hover:text-red-900 "
-                href="/It"
-              >
+              <Link className="hover:text-red-900 " href="/It">
                 IT Consulting
               </Link>
-              <Link
-                className="hover:text-red-900 "
-                href="/AiMl"
-              >
+              <Link className="hover:text-red-900 " href="/AiMl">
                 AI & ML Solutions
               </Link>
-              <Link
-                className="hover:text-red-900 "
-                href="/Datacl"
-              >
+              <Link className="hover:text-red-900 " href="/Datacl">
                 Data Cleaning
               </Link>
             </div>

@@ -91,7 +91,7 @@ export default function Footer() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14036.377425826035!2d77.09327359999999!3d28.416409599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d2203669a5151%3A0x6d275bde29f8078d!2sMarengo%20Asia%20Hospitals%2C%20Gurugram!5e0!3m2!1sen!2sin!4v1793437380017!5m2!1sen!2sin"
             width="250"
             height="350"
-            style={{border:0}}
+            style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             // referrerpolicy="strict-origin-when-cross-origin"
