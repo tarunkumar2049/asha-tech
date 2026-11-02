@@ -14,10 +14,10 @@ export default function Locations() {
         </h1>
       </div>
       <div className="flex gap-4 mx-20">
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/south-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -26,17 +26,17 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden ">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/west-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">West Delhi</h1>
@@ -45,17 +45,17 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden ">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/east-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -64,17 +64,17 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/north-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -83,17 +83,17 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/central-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -102,17 +102,17 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden ">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
           <img
             src="/ncr-delhi.jpg"
-            className="h-36 rounded-t-md hover:scale-108 duration-500 "
+            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -121,7 +121,7 @@ export default function Locations() {
             </p>
             <Link
               href="/"
-              className="text-[#b91c1c] flex items-center gap-1 font-semibold justify-center p-4"
+              className="text-[#b91c1c] flex items-center gap-1 hover:gap-2 duration-400 font-semibold justify-center p-4"
             >
               View Details
               <FaArrowRightLong />
