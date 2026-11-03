@@ -415,7 +415,7 @@ export default function page() {
           creates real impact for your business.
         </p>
         <Link
-          href="/quote"
+          href="/contact"
           className="bg-red-700 font-semibold px-5 py-3 w-45 text-white rounded-md"
         >
           Get a Free Quote

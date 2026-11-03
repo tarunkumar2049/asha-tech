@@ -9,10 +9,11 @@ import { FaSearch } from "react-icons/fa";
 import { HiUsers } from "react-icons/hi2";
 import { FaRobot } from "react-icons/fa";
 import { IoIosBrush } from "react-icons/io";
+import Link from "next/link";
 
 export default function ServicesSection() {
   return (
-    <div className="mb-10">
+    <div className="mb-10 mt-10">
       <div className="flex flex-col items-center">
         <h1 className="text-[#b91c1c] font-semibold">OUR SERVICES</h1>
         <h1 className="text-3xl font-semibold mb-6">
@@ -20,7 +21,10 @@ export default function ServicesSection() {
         </h1>
       </div>
       <div className="grid grid-cols-4 gap-4 mx-20 ">
-        <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
+        <Link
+          href={"/services/web-development"}
+          className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"
+        >
           <div className="px-[45%]">
             <FaGlobe color="#b91c1c" size={30} />
           </div>
@@ -31,8 +35,11 @@ export default function ServicesSection() {
           <div className="text-center justify-center items-center mt-6 px-[47%]">
             <FaArrowRightLong color="#b91c1c" />
           </div>
-        </div>
-        <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
+        </Link>
+        <Link
+          href={"/services/app-development"}
+          className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"
+        >
           <div className="px-[45%]">
             <FaMobileAlt color="#b91c1c" size={30} />
           </div>
@@ -44,8 +51,11 @@ export default function ServicesSection() {
           <div className="text-center justify-center items-center mt-6 px-[47%]">
             <FaArrowRightLong color="#b91c1c" />
           </div>
-        </div>
-        <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
+        </Link>
+        <Link
+          href={"/services/software-development"}
+          className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"
+        >
           <div className="px-[45%]">
             <FaDesktop color="#b91c1c" size={30} />
           </div>
@@ -56,8 +66,11 @@ export default function ServicesSection() {
           <div className="text-center justify-center items-center mt-6 px-[47%]">
             <FaArrowRightLong color="#b91c1c" />
           </div>
-        </div>
-        <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
+        </Link>
+        <Link
+          href={""}
+          className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"
+        >
           <div className="px-[45%]">
             <FaCartShopping color="#b91c1c" size={30} />
           </div>
@@ -68,8 +81,11 @@ export default function ServicesSection() {
           <div className="text-center justify-center items-center mt-6 px-[47%]">
             <FaArrowRightLong color="#b91c1c" />
           </div>
-        </div>
-        <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
+        </Link>
+        <Link
+          href={"/services/digital-marketing"}
+          className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"
+        >
           <div className="px-[45%]">
             <ImStatsDots color="#b91c1c" size={30} />
           </div>
@@ -80,7 +96,7 @@ export default function ServicesSection() {
           <div className="text-center justify-center items-center mt-6 px-[47%]">
             <FaArrowRightLong color="#b91c1c" />
           </div>
-        </div>
+        </Link>
         <div className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500">
           <div className="px-[45%]">
             <FaSearch color="#b91c1c" size={30} />

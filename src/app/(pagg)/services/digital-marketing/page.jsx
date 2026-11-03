@@ -1,4 +1,6 @@
 import { FiCheck } from "react-icons/fi";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import Link from "next/link";
 
 export default function page() {
@@ -42,10 +44,11 @@ export default function page() {
             </h1>
           </div>
           <Link
-            href="/quote"
-            className="bg-[#b91c1c] font-semibold px-4 py-2 text-white rounded-md w-40 my-8"
+            href="/contact"
+            className="flex gap-1 bg-[#b91c1c] font-semibold px-4 py-3 text-white rounded-md w-45 my-8"
           >
             Get a Free Quote
+            <span className="flex items-center"><FaArrowRightLong/></span>
           </Link>
         </div>
       </div>
