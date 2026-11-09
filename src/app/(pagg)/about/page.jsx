@@ -14,13 +14,16 @@ import { IoMdSettings } from "react-icons/io";
 import { MdDesignServices } from "react-icons/md";
 import { GrTest } from "react-icons/gr";
 import { FaPaperPlane } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function page() {
   return (
     <div className="mt-20 bg-[radial-gradient(circle,rgba(120,120,1200,0.1)_2px,transparent_2px)] bg-size-[30px_30px] ">
       <div className="px-20 flex gap-50 mb-10">
         <div>
-          <h1 className="text-red-600 font-semibold my-8">About AshaTech</h1>
+          <h1 className="text-red-600 font-semibold mt-12 mb-4">
+            About AshaTech
+          </h1>
           <h1 className="text-6xl font-bold">
             Building <span className="text-red-600">Digital Solutions</span>
             That Move Businesses Forward
@@ -30,9 +33,15 @@ export default function page() {
             through innovative technology, thoughtful design and reliable
             solutions.
           </p>
-          <button className="bg-[#b91c1c] font-semibold px-4 py-2 text-white rounded-md">
+          <Link
+            href={"/contact"}
+            className="bg-[#b91c1c] flex gap-1 font-semibold w-35 px-4 py-2 text-white rounded-md hover:-translate-y-1 duration-300 hover:bg-red-600"
+          >
             Get Started
-          </button>
+            <span className="flex items-center">
+              <FaArrowRightLong />
+            </span>
+          </Link>
         </div>
         <div className="rounded-2xl overflow-hidden w-350 mt-14 shadow-2xl">
           <div className="absolute text-white backdrop-blur-xs rounded-2xl p-4 top-30 right-120">
@@ -416,9 +425,12 @@ export default function page() {
         </p>
         <Link
           href="/contact"
-          className="bg-red-700 font-semibold px-5 py-3 w-45 text-white rounded-md"
+          className="bg-red-700 flex gap-1 font-semibold px-5 py-3 w-48 text-white rounded-md hover:bg-red-600 hover:gap-2 duration-300"
         >
           Get a Free Quote
+          <span className="flex items-center">
+              <FaArrowRightLong />
+            </span>
         </Link>
       </div>
     </div>

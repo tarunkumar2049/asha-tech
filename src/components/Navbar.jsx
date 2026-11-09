@@ -11,7 +11,6 @@ import { FaYoutube } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-
 export default function Navbar() {
   const url = usePathname();
   return (
@@ -81,7 +80,7 @@ export default function Navbar() {
               Services
               <IoIosArrowDown />
             </Link>
-            <div className="absolute flex-col gap-1 bg-white shadow-2xl rounded-md p-4 space-y-1 hidden group-hover:flex">
+            <div className="absolute flex-col gap-1 bg-white shadow-2xl border border-gray-300 rounded-md py-4 px-6 space-y-2 hidden group-hover:flex">
               <Link
                 className={` font-semibold hover:text-red-800 ${url == "/services/web-development" ? "text-red-700" : "text-gray-600"}`}
                 href={`services/web-development`}
@@ -168,7 +167,9 @@ export default function Navbar() {
             className="bg-[#b91c1c] font-semibold flex gap-1 px-4 py-2 text-white rounded-md hover:bg-red-600"
           >
             Get a Free Quote
-            <span className="flex items-center"><FaArrowRightLong/></span>
+            <span className="flex items-center">
+              <FaArrowRightLong />
+            </span>
           </Link>
         </div>
       </div>
