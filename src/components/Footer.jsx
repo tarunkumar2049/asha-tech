@@ -11,8 +11,8 @@ import { FaRegCopyright } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div className="flex mt-8 flex-col ">
-      <div className="flex">
-        <div className="pl-20">
+      <div className="flex flex-col lg:flex-row">
+        <div className="lg:pl-20 px-5">
           <div className="flex">
             <img src="/logo.webp" alt="logo image" className="h-13" />
             <Link href="/" className="flex flex-col">
@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </Link>
           </div>
-          <p className="w-60 text-gray-600 mt-5">
+          <p className="lg:w-60 text-gray-600 mt-5">
             AshaTech is a leading IT solutions company based in Delhi, helping
             businesses of all sizes grow with technology.
           </p>
@@ -41,7 +41,7 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <div className="mx-25 flex gap-30">
+        <div className="lg:mx-25 mx-5 grid md:grid-cols-2 lg:grid-cols-4 md:flex-row gap-6 md:gap-30">
           <div className="flex flex-col">
             <h1 className="text-xl font-semibold ">Quick Links</h1>
             <div className="flex flex-col mt-2 text-gray-600 gap-2">

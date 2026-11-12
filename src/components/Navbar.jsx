@@ -15,7 +15,7 @@ export default function Navbar() {
   const url = usePathname();
   return (
     <div className="border-b-3 border-[#b91c1c] z-20 fixed w-full bg-white">
-      <div className="bg-black text-white flex justify-between">
+      <div className="bg-black text-white justify-between hidden lg:flex">
         <div className="flex gap-10 ml-20 py-2">
           <h1 className="flex items-center text-xs">
             <IoMdMail />
@@ -58,7 +58,7 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
-        <div className="flex pr-20 gap-5 text-gray-600 items-center">
+        <div className="lg:flex pr-20 gap-5 text-gray-600 items-center hidden">
           <Link
             href={`/`}
             className={` font-semibold hover:text-red-800 ${url == "/" ? "text-red-700" : "text-gray-600"}`}

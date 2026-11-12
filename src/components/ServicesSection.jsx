@@ -16,11 +16,11 @@ export default function ServicesSection() {
     <div className="mb-10 mt-10">
       <div className="flex flex-col items-center">
         <h1 className="text-[#b91c1c] font-semibold">OUR SERVICES</h1>
-        <h1 className="text-3xl font-semibold mb-6">
+        <h1 className="text-4xl md:text-3xl text-center font-semibold mb-6">
           End-to-End IT Solutions To Grow Your Business
         </h1>
       </div>
-      <div className="grid grid-cols-4 gap-4 mx-20 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-2 lg:mx-20 ">
         <Link
           href={"/services/web-development"}
           className="flex flex-col gap-2 border border-gray-200 shadow-sm p-6 rounded-md hover:-translate-y-3 duration-500"

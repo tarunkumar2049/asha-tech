@@ -13,11 +13,11 @@ export default function Locations() {
           We Serve Across Delhi
         </h1>
       </div>
-      <div className="flex gap-4 mx-20">
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 md:mx-2 lg:mx-20">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/south-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 overflow-hidden"
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -33,10 +33,10 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/west-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">West Delhi</h1>
@@ -52,10 +52,10 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/east-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -71,10 +71,10 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/north-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -90,10 +90,10 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/central-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
@@ -109,10 +109,10 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
           <img
             src="/ncr-delhi.jpg"
-            className="h-36 rounded-t-md group-hover:scale-108 duration-500 "
+            className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>

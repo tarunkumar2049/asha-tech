@@ -111,7 +111,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Service Content */}
-        <div className="absolute top-46 left-20 gap-4 flex flex-col">
+        <div className="absolute top-18 lg:top-46 left-4 lg:left-20 gap-4 flex flex-col">
           <motion.div
             key={`content-${activeService.id}`}
             initial={{ opacity: 0, y: 50 }}
@@ -123,11 +123,11 @@ export default function Hero() {
               {activeService.title}
             </h1>
 
-            <h1 className="text-5xl font-bold">{activeService.heading}</h1>
+            <h1 className="text-3xl font-bold">{activeService.heading}</h1>
 
-            <p className="w-132 text-xl text-gray-600">{activeService.desc}</p>
+            <p className="w-100 md:w-132 text-md md:text-xl text-gray-600">{activeService.desc}</p>
 
-            <div className="flex gap-6">
+            <div className="flex gap-2 md:gap-6">
               <Link
                 href={activeService.link}
                 className="flex gap-1 shadow-2xl px-8 py-3 rounded-md text-white bg-[#b91c1c] hover:gap-3 duration-300 hover:bg-red-800"
@@ -148,7 +148,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Service Thumbnail Cards */}
-          <div className="grid grid-cols-3 gap-2 mt-10 w-130">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-10 w-90 md:w-130">
             {services.map((service) => {
               const Icon = service.icon;
 

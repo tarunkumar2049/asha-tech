@@ -9,7 +9,7 @@ export default function ChoosingSection() {
       <div className="font-semibold text-red-600 py-6">
         <h1>WHY CHOOSE ASHATECH?</h1>
       </div>
-      <div className="flex gap-20 pb-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-20 gap-2 pb-6">
         <div className="border-r border-gray-700 pr-20 flex gap-5">
           <div className="text-4xl mt-4 text-red-600">
             <FaUsers />
@@ -19,7 +19,7 @@ export default function ChoosingSection() {
             <h1 className="text-gray-400">Years of Experience</h1>
           </div>
         </div>
-        <div className="border-r border-gray-700 pr-20 flex gap-5">
+        <div className="lg:border-r border-gray-700 pr-20 flex gap-5">
           <div className="text-4xl mt-4 text-red-600">
             <PiSmileyFill />
           </div>
