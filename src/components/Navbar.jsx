@@ -10,9 +10,16 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FiX } from "react-icons/fi";
+import { useState } from "react";
+import Hamburger from "./Hamburger";
 
 export default function Navbar() {
   const url = usePathname();
+  const [menu, setMenu] = useState([]);
+  const [hamicon, setHamIcon] = useState(true);
+
   return (
     <div className="border-b-3 border-[#b91c1c] z-20 fixed w-full bg-white">
       <div className="bg-black text-white justify-between hidden lg:flex">
@@ -49,7 +56,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex justify-between ">
-        <div className="flex pl-20">
+        <div className="flex md:pl-20">
           <img src="/logo.webp" alt="logo image" className="h-13 " />
           <Link href="/" className="flex flex-col">
             <h1 className="text-2xl font-semibold">AshaTech</h1>
@@ -172,7 +179,32 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
+        <div>
+          <div className="flex md:hidden ">
+            <span
+              className={`text-3xl p-2 ${hamicon === false ? "hidden" : "flex"}`}
+            >
+              <GiHamburgerMenu
+                onClick={() => {
+                  setMenu(<Hamburger />);
+                  setHamIcon(false);
+                }}
+              />
+            </span>
+            <span
+              className={`text-3xl p-2 ${hamicon === true ? "hidden" : "flex"}`}
+            >
+              <FiX
+                onClick={() => {
+                  setMenu([]);
+                  setHamIcon(true);
+                }}
+              />
+            </span>
+          </div>
+        </div>
       </div>
+      <div>{menu}</div>
     </div>
   );
 }
