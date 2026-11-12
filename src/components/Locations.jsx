@@ -21,7 +21,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link
@@ -40,7 +40,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">West Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link
@@ -59,7 +59,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link
@@ -78,7 +78,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link
@@ -97,7 +97,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link
@@ -116,7 +116,7 @@ export default function Locations() {
           />
           <div className="p-4 flex flex-col gap-2">
             <h1 className="font-semibold text-xl text-center">South Delhi</h1>
-            <p className="text-gray-800 w-42 text-sm">
+            <p className="text-gray-800 md:w-42 text-center md:text-sm">
               Saket, Hauz Khas, Malviya Nagar, Greater Kailash, etc.
             </p>
             <Link

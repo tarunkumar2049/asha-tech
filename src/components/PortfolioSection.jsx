@@ -9,8 +9,12 @@ export default function PortfolioSection() {
   return (
     <div className="flex flex-col lg:flex-row px-6 lg:px-20 md:gap-22 bg-black ">
       <div className="text-white flex flex-col gap-4 py-4 lg:py-15">
-        <h1 className="text-[#b91c1c] text-sm font-semibold text-center">OUR PORTFOLIO</h1>
-        <h1 className="text-3xl md:text-4xl font-semibold text-center">Our Recent Work</h1>
+        <h1 className="text-[#b91c1c] text-sm font-semibold text-center">
+          OUR PORTFOLIO
+        </h1>
+        <h1 className="text-3xl md:text-4xl font-semibold text-center">
+          Our Recent Work
+        </h1>
         <p className="text-gray-500 text-center ">
           We build websites, apps and software that create real impact.
         </p>

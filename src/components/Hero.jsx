@@ -106,7 +106,6 @@ export default function Hero() {
             src={activeService.image}
             alt={activeService.title}
             priority
-            fill
           />
         </motion.div>
 
@@ -125,7 +124,9 @@ export default function Hero() {
 
             <h1 className="text-3xl font-bold">{activeService.heading}</h1>
 
-            <p className="w-100 md:w-132 text-md md:text-xl text-gray-600">{activeService.desc}</p>
+            <p className="w-100 md:w-132 text-md md:text-xl text-gray-600">
+              {activeService.desc}
+            </p>
 
             <div className="flex gap-2 md:gap-6">
               <Link
@@ -134,7 +135,7 @@ export default function Hero() {
               >
                 Explore Services
                 <span className="flex items-center">
-                  <FaArrowRightLong/>
+                  <FaArrowRightLong />
                 </span>
               </Link>
 
