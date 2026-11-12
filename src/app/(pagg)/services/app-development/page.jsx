@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <div className="mt-35 mb-8 flex flex-col items-center">
+    <div className="mt-25 md:mt-35 mb-8 mx-4 md:mx-0 flex flex-col items-center">
       <div>
         <div className="flex flex-col gap-3 my-8">
           <h1 className="text-4xl font-bold">App Development</h1>
-          <p className="text-gray-600 w-210 text-xl">
+          <p className="text-gray-600 md:w-210 md:text-xl">
             Native and cross-platform mobile applications for iOS and Android.
             We create intuitive, high-performance apps that your users will
             love.
@@ -18,6 +18,7 @@ export default function page() {
         <div className="gap-2 flex flex-col">
           <h1 className="font-bold text-xl">What We Offer</h1>
           <div className="text-gray-600 gap-4 flex flex-col my-2">
+
             <h1 className="flex items-center gap-1 font-semibold">
               <FiCheck className="text-red-600 text-xl size-5" />
               Native iOS & Android development
