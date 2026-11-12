@@ -128,7 +128,7 @@ export default function Hero() {
               {activeService.desc}
             </p>
 
-            <div className="flex gap-2 md:gap-6">
+            <div className="flex mx-auto gap-2 md:gap-6">
               <Link
                 href={activeService.link}
                 className="flex gap-1 shadow-2xl px-8 py-3 rounded-md text-white bg-[#b91c1c] hover:gap-3 duration-300 hover:bg-red-800"
