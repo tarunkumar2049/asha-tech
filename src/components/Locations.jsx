@@ -14,7 +14,7 @@ export default function Locations() {
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 md:mx-2 lg:mx-20">
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/south-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 overflow-hidden"
@@ -33,7 +33,7 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/west-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
@@ -52,7 +52,7 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/east-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
@@ -71,7 +71,7 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/north-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
@@ -90,7 +90,7 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/central-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "
@@ -109,7 +109,7 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-5 md:mx-0 group">
+        <div className="border rounded-md border-gray-200 shadow-md hover:shadow-xl duration-500 overflow-hidden mx-2 md:mx-0 group">
           <img
             src="/ncr-delhi.jpg"
             className="lg:h-36 rounded-t-md group-hover:scale-108 duration-500 "

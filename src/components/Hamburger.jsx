@@ -5,10 +5,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { MenuContext } from "./MenuContext";
 
 export default function Hamburger() {
+  const menu = useContext(MenuContext);
   const url = usePathname();
   const [servMenu, setServMenu] = useState(false);
 
@@ -19,12 +21,18 @@ export default function Hamburger() {
           <Link
             className={`px-4 mx-3 rounded-md mt-2 py-2 ${url == "/" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             Home
           </Link>
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/about" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/about`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             About Us
           </Link>
@@ -32,6 +40,7 @@ export default function Hamburger() {
             className={`px-4 mx-3 rounded-md py-2 ${url == "" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             onClick={() => {
               setServMenu(true);
+              menu.setMenu([]);
             }}
           >
             <div className="flex justify-between">
@@ -46,54 +55,81 @@ export default function Hamburger() {
               <Link
                 className={` ml-6  ${url == "/services/web-development" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href={`services/web-development`}
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 Web Development
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/app-development" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href={`/services/app-development`}
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 App Development
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/software-development" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href={`/services/software-development`}
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 Software Development
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/digital-marketing" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href={`/services/digital-marketing`}
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 Digital Marketing
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/seo" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href="/Seo"
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 SEO Services
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/It" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href="/It"
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 IT Consulting
               </Link>
               <Link
                 className={` ml-6  ${url == "/services/AiMl" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href="/AiMl"
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 AI & ML Solutions
               </Link>
               <Link
                 className={` ml-6  ${url == "Datacl" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href="/Datacl"
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 Data Cleaning
               </Link>
               <Link
                 className={` ml-6  ${url == "Datacl" ? "text-red-700 bg-gray-200" : "text-gray-600"}`}
                 href="/ecommerce"
+                onClick={() => {
+                  menu.setMenu([]);
+                }}
               >
                 E-Commerce
               </Link>
@@ -102,24 +138,36 @@ export default function Hamburger() {
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/portfolio" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/portfolio`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             Portfolio
           </Link>
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/reviews" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/reviews`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             Reviews
           </Link>
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/blog" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/blog`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             Blog
           </Link>
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/contact" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/contact`}
+            onClick={() => {
+              menu.setMenu([]);
+            }}
           >
             Contact Us
           </Link>

@@ -41,7 +41,7 @@ export default function Footer() {
             </span>
           </div>
         </div>
-        <div className="lg:mx-25 mx-5 grid md:grid-cols-2 lg:grid-cols-4 md:flex-row gap-6 md:gap-30">
+        <div className="mx-5 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex flex-col">
             <h1 className="text-xl font-semibold ">Quick Links</h1>
             <div className="flex flex-col mt-2 text-gray-600 gap-2">
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col">
             <h1 className="text-xl font-semibold ">Our Services</h1>
-            <div className="flex flex-col mt-2 text-gray-600 gap-2">
+            <div className="flex flex-col lg:text-sm mt-2 text-gray-600 gap-2">
               <Link href={`/`}>Web Development</Link>
               <Link href={`/`}>Mobile App Development</Link>
               <Link href={`/`}>Software Development</Link>

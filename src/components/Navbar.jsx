@@ -12,8 +12,9 @@ import { usePathname } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiX } from "react-icons/fi";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Hamburger from "./Hamburger";
+import { MenuContext } from "./MenuContext";
 
 export default function Navbar() {
   const url = usePathname();
@@ -56,7 +57,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex justify-between ">
-        <div className="flex md:pl-20">
+        <div className="flex pl-2 md:pl-2 lg:pl-20">
           <img src="/logo.webp" alt="logo image" className="h-13 " />
           <Link href="/" className="flex flex-col">
             <h1 className="text-2xl font-semibold">AshaTech</h1>
@@ -65,7 +66,7 @@ export default function Navbar() {
             </span>
           </Link>
         </div>
-        <div className="lg:flex pr-20 gap-5 text-gray-600 items-center hidden">
+        <div className="lg:flex -mr-78 gap-5 text-gray-600 items-center hidden">
           <Link
             href={`/`}
             className={` font-semibold hover:text-red-800 ${url == "/" ? "text-red-700" : "text-gray-600"}`}

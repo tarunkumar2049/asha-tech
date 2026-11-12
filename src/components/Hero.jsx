@@ -96,7 +96,7 @@ export default function Hero() {
         {/* Background Image */}
         <motion.div
           key={activeService.id}
-          className="overflow-hidden h-[80vh] md:min-h-screen mt-0 bg-amber-500"
+          className="overflow-hidden h-[80vh] md:min-h-screen bg-amber-500"
           initial={{ opacity: 0, scale: 2, y: 120 }}
           animate={{ opacity: 1, scale: 1.4, y: 120 }}
           transition={{ duration: 1.2, ease: easeInOut }}
