@@ -17,7 +17,7 @@ export default function NotFound() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-red-600 text-[255px] font-bold ">
+          <h1 className="text-red-600 text-[150px] md:text-[255px] font-bold ">
             4<span className="text-white">0</span>4
           </h1>
         </motion.div>
@@ -30,7 +30,7 @@ export default function NotFound() {
           <h1 className="text-white font-semibold text-4xl -mt-15">
             Oops! Page Not Found
           </h1>
-          <p className="text-gray-400 w-120 mt-4">
+          <p className="text-gray-400 mx-10 md:w-120 mt-4">
             The page you are looking for might have been removed, had its name
             changed, or is temporarily unavailable.
           </p>

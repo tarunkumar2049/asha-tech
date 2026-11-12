@@ -96,7 +96,7 @@ export default function Hero() {
         {/* Background Image */}
         <motion.div
           key={activeService.id}
-          className="overflow-hidden min-h-screen mt-0 bg-amber-500"
+          className="overflow-hidden h-[80vh] md:min-h-screen mt-0 bg-amber-500"
           initial={{ opacity: 0, scale: 2, y: 120 }}
           animate={{ opacity: 1, scale: 1.4, y: 120 }}
           transition={{ duration: 1.2, ease: easeInOut }}
@@ -148,7 +148,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Service Thumbnail Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-10 w-90 md:w-130">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-10 mx-auto md:mx-0 w-95 md:w-130">
             {services.map((service) => {
               const Icon = service.icon;
 
@@ -157,7 +157,7 @@ export default function Hero() {
                   key={service.id}
                   whileHover="hover"
                   onClick={() => setActiveService(service)}
-                  className={`relative w-40 h-22 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl group cursor-pointer transition-all duration-300 ${
+                  className={`relative h-22 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl group cursor-pointer transition-all duration-300 ${
                     activeService.id === service.id
                       ? "border-2 border-red-500"
                       : "hover:border-2 hover:border-red-500"

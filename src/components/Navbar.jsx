@@ -180,7 +180,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div>
-          <div className="flex md:hidden ">
+          <div className="flex lg:hidden ">
             <span
               className={`text-3xl p-2 ${hamicon === false ? "hidden" : "flex"}`}
             >

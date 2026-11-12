@@ -6,6 +6,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { useState } from "react";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function Hamburger() {
   const url = usePathname();
@@ -27,14 +28,18 @@ export default function Hamburger() {
           >
             About Us
           </Link>
-          <Link
+          <div
             className={`px-4 mx-3 rounded-md py-2 ${url == "" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
-            href={``}
             onClick={() => {
               setServMenu(true);
             }}
           >
-            Services
+            <div className="flex justify-between">
+              Services
+              <span className={`${servMenu == true ? "rotate-90" : ""}`}>
+                <IoIosArrowForward />
+              </span>
+            </div>
             <div
               className={`flex-col gap-2 ${servMenu == true ? "flex" : "hidden"} `}
             >
@@ -93,7 +98,7 @@ export default function Hamburger() {
                 E-Commerce
               </Link>
             </div>
-          </Link>
+          </div>
           <Link
             className={`px-4 mx-3 rounded-md py-2 ${url == "/portfolio" ? "text-red-700 bg-gray-200" : "text-gray-600"} `}
             href={`/portfolio`}

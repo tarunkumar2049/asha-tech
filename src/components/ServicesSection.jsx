@@ -16,7 +16,7 @@ export default function ServicesSection() {
     <div className="mb-10 mt-10">
       <div className="flex flex-col items-center">
         <h1 className="text-[#b91c1c] font-semibold">OUR SERVICES</h1>
-        <h1 className="text-4xl md:text-3xl text-center font-semibold mb-6">
+        <h1 className="text-4xl mx-8 md:text-3xl text-center font-semibold mb-6">
           End-to-End IT Solutions To Grow Your Business
         </h1>
       </div>

@@ -5,11 +5,11 @@ import Link from "next/link";
 
 export default function page() {
   return (
-    <div className="mt-35 mb-8 flex flex-col items-center">
+    <div className="mt-25 md:mt-35 mb-8 mx-4 md:mx-8 lg:mx-0 flex flex-col items-center">
       <div>
         <div className="flex flex-col gap-3 my-8">
           <h1 className="text-4xl font-bold">Digital Marketing</h1>
-          <p className="text-gray-600 w-210 text-xl">
+          <p className="text-gray-600 lg:w-210 text-xl">
             SEO, social media, and paid campaigns to grow your online presence.
             We create data-driven marketing strategies that deliver measurable
             results.

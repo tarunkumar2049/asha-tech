@@ -1,19 +1,18 @@
 import { FiCheck } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 import Link from "next/link";
 
 export default function page() {
   return (
-    <div className="mt-25 md:mt-35 mb-8 mx-4 md:mx-0 flex flex-col items-center">
+    <div className="mt-25 md:mt-35 mb-8 mx-4 md:mx-8 lg:mx-0 flex flex-col items-center">
       <div>
         <div className="flex flex-col gap-3 my-8">
           <h1 className="text-4xl font-bold">Web Development</h1>
-          <p className="text-gray-600 md:w-210 text-xl">
+          <p className="text-gray-600 lg:w-210 text-xl">
             We build fast, responsive, and modern websites tailored to your
             business needs. From landing pages to complex web applications, our
             team delivers solutions that drive results.
-          </p> 
+          </p>
         </div>
         <div className="gap-2 flex flex-col">
           <h1 className="font-bold text-xl">What We Offer</h1>
@@ -48,7 +47,9 @@ export default function page() {
             className="flex gap-1 bg-[#b91c1c] font-semibold px-4 py-3 text-white rounded-md w-45 my-8"
           >
             Get a Free Quote
-            <span className="flex items-center"><FaArrowRightLong/></span>
+            <span className="flex items-center">
+              <FaArrowRightLong />
+            </span>
           </Link>
         </div>
       </div>
