@@ -433,8 +433,8 @@ export default function page() {
         >
           Get a Free Quote
           <span className="flex items-center">
-              <FaArrowRightLong />
-            </span>
+            <FaArrowRightLong />
+          </span>
         </Link>
       </div>
     </div>
