@@ -12,9 +12,8 @@ import { usePathname } from "next/navigation";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiX } from "react-icons/fi";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Hamburger from "./Hamburger";
-import { MenuContext } from "./MenuContext";
 
 export default function Navbar() {
   const url = usePathname();
